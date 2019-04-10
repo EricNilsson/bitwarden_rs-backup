@@ -14,6 +14,14 @@ fi
 if [ $? -eq 0 ] 
 then 
   echo "$(date "+%F %T") - Backup successfull"
+  
+  if [ -z "$CHECK_URL" ]
+  then
+    echo "INFO: Define CHECK_URL with https://healthchecks.io to monitor sync job"
+  else
+    wget $CHECK_URL -O /dev/null
+  fi
+  
 else
   echo "$(date "+%F %T") - Backup unsuccessfull"
 fi
