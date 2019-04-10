@@ -39,3 +39,4 @@ docker run --rm --volumes-from=bitwarden bruceforce/bw_backup sqlite3 $DB_FILE "
 | BACKUP_FILE | Path to the desired backup location |
 | CRON_TIME | Cronjob format "Minute Hour Day_of_month Month_of_year Day_of_week Year" |
 | TIMESTAMP | Set to `true` to append timestamp to the `BACKUP_FILE` |
+| CHECK_URL | Set to a url pointing to healthcheck.io |
