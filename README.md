@@ -1,5 +1,7 @@
 # bitwarden_rs Backup
 
+Originally forked from https://gitlab.com/1O/bitwarden_rs-backup
+
 Docker Containers for [bitwarden_rs](https://github.com/dani-garcia/bitwarden_rs) Backup.
 
 ## Usage
