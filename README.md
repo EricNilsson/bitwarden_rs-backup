@@ -1,6 +1,7 @@
 # bitwarden_rs Backup
 
-Originally forked from https://gitlab.com/1O/bitwarden_rs-backup
+Originally forked from https://gitlab.com/1O/bitwarden_rs-backup.
+I added the option to add a checkURL. On a successful backup it does a GET request to that URL.
 
 Docker Containers for [bitwarden_rs](https://github.com/dani-garcia/bitwarden_rs) Backup.
 
@@ -41,4 +42,4 @@ docker run --rm --volumes-from=bitwarden bruceforce/bw_backup sqlite3 $DB_FILE "
 | BACKUP_FILE | Path to the desired backup location |
 | CRON_TIME | Cronjob format "Minute Hour Day_of_month Month_of_year Day_of_week Year" |
 | TIMESTAMP | Set to `true` to append timestamp to the `BACKUP_FILE` |
-| CHECK_URL | Set to a url pointing to healthcheck.io |
+| CHECK_URL | Set to a url pointing to eg. healthcheck.io |
